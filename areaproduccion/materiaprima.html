@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- icon de ionicons     -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <title>ReciPlas S.A</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navegacion">
+            <a href="materiaprima.html">Materia Prima</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+        </nav>
+    </header>
+    <main class="contenedor seccion contenido-centrado">
+        
+        <h2 class="fw.300 center-text">Materia Prima Entrante</h2>
+        <form class="formulario" action="index.html" method="post">
+           <fieldset>
+                <legend>Formulario</legend>
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="fecha">
+
+                <label for="proveedor">Proveedor: </label>
+                <input type="text" id="proveedor" placeholder="Proveedor">
+
+                <label for="art">id articulo: </label>
+                <input type="text" id="art" placeholder="id articulo">
+
+                <label for="descripcion">Descripcion: </label>
+                <textarea name="Descripcion" id="descripcion cols="30" rows="10">Ingrese descripcion del Material</textarea>
+                <label for="cantidad">Cantidad: </label>
+                <input type="number" id="cantidad">
+
+                <label for="recepcion">Recepcion</label>
+                <input type="text" id="recepcion" placeholder="id de usuario de Recepcion">
+
+                <input type="submit" value="Enviar" class="boton">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <p class="copyright">Todos los Derechos Reservados 2020 &copy </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
