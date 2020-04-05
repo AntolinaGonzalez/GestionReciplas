@@ -1,0 +1,116 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+ *,*::before, *::after{
+        box-sizing: inherit;
+ }
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.logotipo{
+    justify-content: center;
+    display: flex;
+    justify-content: start;
+   align-items: center;
+    
+}
+.logo1{
+    max-width: 15%;
+}
+.logo{
+    max-width: 35%;
+    align-items: center;
+}
+.orden{
+    display: flex;
+}
+.site-header{
+    border-radius: 3rem;
+    background-color:#a2feb5;
+    border-color: black;
+    border-style: groove;
+}
+.barra{
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr;
+}
+.nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+   align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color:darkgreen;
+    background-color: limegreen;
+    padding: 1rem;
+}
+
+.usuario h3{
+    display: flex;
+    justify-content: start;
+     align-items: center;
+    font-size: 1.5rem;
+    color:darkolivegreen;
+}
+.usuario img{
+    margin-top: 1rem;
+}
+.prueba{
+    padding: 22rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkolivegreen;
+    background-color:#a2feb5;
+    padding: 2rem;
+}
+table{
+    width: 100%;
+    border: 1px solid #000;
+}
+th, td {
+    width: 20%;
+    height: 2rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+caption{
+    text-align: start;
+}
+p{
+    font-size: 1.5rem;
+}
+.arriba{
+    display: flex;
+    padding: 2rem;
+}
+.arriba h1{
+    margin-right: 3rem;
+}
+.boton a{
+    text-decoration: none;
+    padding: 1rem;
+    border: groove;
+    color: black;
+}
+
+.abajo{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.abajo h1{
+   margin-right: 2rem;
+}
