@@ -9,11 +9,19 @@ html{
     margin: 0 auto;
     max-width: 120rem;
 }
+body{
+    background-color: #4be776;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .logotipo{
-    justify-content: center;
-    display: flex;
+     display: flex;
     justify-content: start;
    align-items: center;
+}
+.logotipo h1{
+    justify-content: center;
+   align-items: center;
+   color: white;
     
 }
 .logo1{
@@ -27,10 +35,7 @@ html{
     display: flex;
 }
 .site-header{
-    border-radius: 3rem;
-    background-color:#a2feb5;
-    border-color: black;
-    border-style: groove;
+    background-color:black;
 }
 .barra{
     display: grid;
@@ -46,8 +51,7 @@ html{
     text-decoration: none;
     font-size: 2rem;
     margin-right: 2rem;
-    color:darkgreen;
-    background-color: limegreen;
+    color: white;
     padding: 1rem;
 }
 
@@ -69,21 +73,30 @@ html{
     justify-content: center;
     align-items: center;
     color: darkolivegreen;
-    background-color:#a2feb5;
+    background-color:black;
     padding: 2rem;
 }
 table{
     width: 100%;
-    border: 1px solid #000;
+    border-style: solid;
+    border-width: .4rem;
+    border-collapse: collapse;
+    color:#0e1a0d;
+}
+tr{
+    border-style: solid;
+    border-width: .5rem;
 }
 th, td {
     width: 20%;
     height: 2rem;
-    text-align: left;
-    vertical-align: top;
-    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    border: .3rem solid #0e1a0d;
     border-collapse: collapse;
     padding: 1rem;
+    font-size: 2rem;
+    background-color: #91bf91;
 }
 caption{
     text-align: start;
@@ -101,10 +114,14 @@ p{
 .boton a{
     text-decoration: none;
     padding: 1rem;
-    border: groove;
+    border: solid;
+    border-color: #14401a;;
     color: black;
+    font-size: 1rem;
 }
-
+.boton a:hover{
+    background-color:#09f54a;
+}
 .abajo{
     display: flex;
     justify-content: end;
