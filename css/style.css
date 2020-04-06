@@ -1,6 +1,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    line-height: 1.5rem;
 }
  *,*::before, *::after{
         box-sizing: inherit;
@@ -130,4 +131,38 @@ p{
 }
 .abajo h1{
    margin-right: 2rem;
+}
+
+/**paginas internas**/
+.contenedor-formulario{
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+form legend {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;   
+}
+.formulario{
+    background-color: lightgreen;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2.5rem;
+    align-items: center;
+}
+.campo label {
+    flex: 0 0 90px;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="number"],
+.campo textarea {
+    flex: 1;
+    height: 2.5rem;
 }
