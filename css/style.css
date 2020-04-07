@@ -163,14 +163,13 @@ p{
 .contenedor-formulario{
   max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
   width: 100%;
 }
 form legend {
-    text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;   
-}
+    font-family: var(--fuenteprincipal); 
+ }
 .formulario{
     background-color: lightgreen;
 }
@@ -186,7 +185,8 @@ form legend {
 .campo label {
     flex: 0 0 90px;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    font-family: var(--fuenteprincipal);
 }
 
 .campo input[type="text"],
@@ -195,4 +195,30 @@ form legend {
 .campo textarea {
     flex: 1;
     height: 2.5rem;
+    background-color: lightgray;
+    max-width: 70%;
+}
+.campo input[type="date"]{
+    background-color: lightgray;
+}
+.boton-ubicacion{
+    display: flex;
+    justify-content: end;
+}
+.boton-enviar{
+    background-color: #14401a;
+    color: white;
+    padding: 1rem 2rem;
+    border-color: #0e1a0d;
+    font-family: var(--tabla);
+    font-size: 1.5rem;
+}
+.boton-enviar:hover{
+    cursor: pointer;
+    background-color: lime;
+}
+fieldset{
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
 }
