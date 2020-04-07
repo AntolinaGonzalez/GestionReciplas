@@ -20,6 +20,8 @@ body{
     background-color: #4be776;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .logotipo{
      display: flex;
@@ -163,7 +165,7 @@ p{
     font-family: var(--tabla);
 }
 .boton a:hover{
-    background-color:#09f54a;
+    background-color:darkolivegreen;
 }
 .abajo{
     display: flex;
@@ -231,7 +233,7 @@ form legend {
 }
 .boton-enviar:hover{
     cursor: pointer;
-    background-color: lime;
+    background-color:darkolivegreen;
 }
 fieldset{
     border-color: black;
