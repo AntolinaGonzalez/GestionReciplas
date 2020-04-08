@@ -150,9 +150,11 @@ p{
 }
 .arriba h1{
     margin-right: 2rem;
+    margin-left: 20rem;
     font-family: var(--tabla);
     font-size: 2.5rem;
     background-color:white;
+    padding: .3rem;
 }
 .boton a{
     text-decoration: none;
