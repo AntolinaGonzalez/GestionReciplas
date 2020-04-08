@@ -60,7 +60,7 @@ body{
 }
 .nav a{
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     padding: 1rem;
     font-family: var(--tabla);
