@@ -337,10 +337,11 @@ p{
 .perfil{
     background-color: #b2cbba;
     padding: 2rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
 }
+.perfil {
+    font-weight: 900;
 
+}
 .perfil p span{
     background-color:#bac7be;
     padding: .5rem 4rem;

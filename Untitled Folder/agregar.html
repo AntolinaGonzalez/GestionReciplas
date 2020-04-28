@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reciplas</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width-devide-width, initial-scale=1.0">
+	<!--Script para íconos usados-->
+	<script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+	<!--Fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Permanent+Marker|Unna&display=swap" rel="stylesheet">
+    <!--Estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <header class="site-header">
+        <section class="contenedor orden">
+            <div class="barra-comercializacion">
+                <div class="logotipo">
+                    <img src="img/reciplas.png" width="200px"alt="">
+                </div>
+                
+                <!--Botones del navbar --> 
+                <!-- <div class="nav">
+                    <a href="index.html">A Produccion</a>
+                    <a href="historial.html">A Administracion</a>
+                </div> -->
+                <!--Nombre de usuario, aparece el logo de usuario y el nombre-->
+                <div class="usuario">
+                    <img src="img/usuario.jpg" width="40px" class="logo" alt="usuario logeado">
+                    <div class="logeo">
+                        <h3>Jinnar</h3>
+                        <i class="fas fa-caret-square-down"></i>
+                    </div>
+                    
+                </div>
+                
+            </div> 
+        </section>
+    </header>
+    <div class="contenedor">
+        <div class="contenedor navbar-c">
+            <a href="listacliente.html">Clientes</a>
+            <a href="listapedidos.html">Pedidos</a>
+            <a href="#">Ventas</a>
+        </div>
+    </div>
+    <main class="contenedor inicio-titulo">
+        <h1>Nuevo cliente</h1>
+        <form >
+            <div class="formulario-cliente">
+                <fieldset>
+                    <div class="campo">
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" placeholder="Nombre">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Apellido: </label>
+                        <input type="text" id="name" placeholder="Apellido">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo">
+                        <label for="name">DNI: </label>
+                        <input type="number" id="name" placeholder="Documento">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Pais: </label>
+                        <input type="text" id="name" placeholder="Pais">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo">
+                        <label for="name">Provincia: </label>
+                        <input type="text" id="name" placeholder="Provincia">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Cod. Postal: </label>
+                        <input type="number" id="name" placeholder="Codigo postal">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo">
+                        <label for="name">Direccion: </label>
+                        <input type="text" id="name" placeholder="Direccion">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Telefono: </label>
+                        <input type="number" id="name" placeholder="Telefono">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo">
+                        <label for="name">Correo Electronico: </label>
+                        <input type="text" id="name" placeholder="insumos">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo">
+                        <label for="descripcion">Descripcion: </label>
+                        <textarea name="Descripcion" id="descripcion" cols="30" rows="10"
+                        style="width: 608px; height: 120px;">Descripcion general</textarea>
+                        <i class="fas fa-edit"></i>
+                    </div>      
+                  
+                    
+                </fieldset>
+                
+            </div>
+            <div class="boton boton-ubicacion">
+                <a href="li">Guardar</a>
+                <a href="listacliente.html">Imprimir</a>
+            </div>
+        </form>
+    </main>
+
+    <footer  class="footer clearfix">
+        <h2>2020 Reciplas - Todos los derechos reservados &copy</h2>
+    </footer>
+</body>
+</html>
