@@ -16,10 +16,7 @@ html{
     margin: 0 auto;
     max-width: 120rem;
 }
-body{
-
-}
-
+/**para controlar el footer**/
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -98,8 +95,9 @@ body{
     align-items: center;
 }
 .site-header{
-    background-color: #5f8569;
+    background-color: #ffffff;
     height: 10rem;
+    box-shadow: 1px 5px 2px #888888;
 }
 
 .nav {
@@ -243,6 +241,7 @@ body{
     color: black;
     background-color: #5f8569;
     padding: 1rem;
+    height: 100px;
 }
 .contenedor-tabla{
     width: 80%;
@@ -337,11 +336,10 @@ p{
 .perfil{
     background-color: #b2cbba;
     padding: 2rem;
-}
-.perfil {
     font-weight: 900;
-
+    margin-bottom: 2rem;
 }
+
 .perfil p span{
     background-color:#bac7be;
     padding: .5rem 4rem;
@@ -406,7 +404,6 @@ p{
     margin-right: 1rem;
 }
 .campo label {
-    flex: 0 0 80px;
     color: black;
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -464,3 +461,71 @@ width: 100rem;
 .click:hover{
     background-color: red!important;
 }
+
+/**administracion**/
+/**pagina index**/
+
+.menu-administracion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.opcion-admi{
+    padding: 2rem;
+    background-color: #48d96f;
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    border: #0e1a0d;
+    border: solid;
+}
+.opcion-admi i{
+    color: black;
+    margin-top: 3rem;
+}
+.opcion-admi a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.opcion-admi:hover{
+    background-color:#828784;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.opcion-admi i{
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+.proveedores{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+}
+.proveedores h1{
+    margin-left: -15rem;
+}
+.boton-busq{
+    margin-top: 1rem;
+}
+.boton-busq a{
+    text-decoration: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color:  #b2cbba;
+    border-radius: .2rem; 
+    color: #0e1a0d;
+    font-size: 1.5rem;
+    font-family: var(--tabla);
+}
+.formulario{
+    margin-bottom: 8rem;
+}
+.boton-admi{
+    display: flex;
+    justify-content: end;
+}
+.boton-admi a{
+    margin-right: 2rem;
+}
+
