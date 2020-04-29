@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reciplas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-devide-width, initial-scale=1.0">
+    <!--Script para íconos usados-->
+    <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+    <!--Fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Permanent+Marker|Unna&display=swap" rel="stylesheet">
+    <!--Estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+    <header class="site-header">
+        <section class="contenedor orden">
+            <div class="barra-comercializacion">
+                <div class="logotipo">
+                    <img src="img/reciplas.png" width="200px" alt="">
+                </div>
+
+                <!--Botones del navbar -->
+                <!-- <div class="nav">
+                    <a href="index.html">A Produccion</a>
+                    <a href="historial.html">A Administracion</a>
+                </div> -->
+                <!--Nombre de usuario, aparece el logo de usuario y el nombre-->
+                <div class="usuario">
+                    <img src="img/usuario.jpg" width="40px" class="logo" alt="usuario logeado">
+                    <div class="logeo">
+                        <h3>Jinnar</h3>
+                        <i class="fas fa-caret-square-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main class="contenedor inicio-titulo">
+        <h1>Busqueda avanzada</h1>
+        <form >
+            <div class="formulario">
+                <fieldset>
+                    <div class="campo fijo">
+                        <label for="id">ID: </label>
+                        <input type="number" id="id" placeholder="ID">
+                        <i class="fas fa-edit"></i>
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" id="apellido" placeholder="Apellido" >
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Nombre" >
+                    </div>
+                    <div class="campo fijo">
+                        <label for="tel">Telefono: </label>
+                        <input type="text" id="tel" placeholder="telefono">
+                        <i class="fas fa-edit"></i>
+                        <label for="dni">DNI: </label>
+                        <input type="number" id="dni" placeholder="DNI">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Correo Electronico: </label>
+                        <input type="text" id="name" placeholder="nicoleMorales.76@hotmail.com">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo fijo">
+                        <label for="">Area </label>
+                       <select name="area" id="">
+                           <option value="">Administracion</option>
+                           <option value="">Produccion</option>
+                           <option value="">Comercializacion</option>
+                       </select>
+                       
+                    </div>   
+                    <div class="boton boton-admi">
+                        <a href="#">Buscar</a>
+                        <a href="#">Limpiar</a>
+                    
+                    </div>
+                    
+                </fieldset>
+                
+            </div>
+            <div class=" contenedor">
+                <h2>Resultado</h2>
+                <div class="formulario">
+                    <table class="sup-formulario">
+                    <tr>
+                        <th>ID</th>
+                        <th>Area</th>
+                        <th>Apellido</th>
+                        <th>Nombre</th>
+                        <th>E-mail</th>
+                        <th>Telefono</th>
+                        <th>Direccion</th>
+                        <th>Acciones</th>
+                    </tr>
+             
+                <tr>
+                    <td>002</td>
+                    <td>Administracion</td>
+                    <td>Guillizoni</td>
+                    <td>Giacomo</td>
+                    <td>giacog@gmail.com</td>
+                    <td>3624846494</td>
+                    <td>Peldi 555</td>
+                    <td><a href="modificarproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
+                        <i class="fas fa-trash-alt"></i></td>
+                       
+                    
+                </table>
+                <br>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer  class="footer height clearfix">
+        <h2>2020 Reciplas - Todos los derechos reservados &copy</h2>
+    </footer>
+</body>
+
+</html>
