@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reciplas</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width-devide-width, initial-scale=1.0">
+	<!--Script para íconos usados-->
+	<script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+	<!--Fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Permanent+Marker|Unna&display=swap" rel="stylesheet">
+    <!--Estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <header class="site-header">
+        <section class="contenedor orden">
+            <div class="barra-comercializacion">
+                <div class="logotipo">
+                    <img src="img/reciplas.png" width="200px"alt="">
+                </div>
+                
+                <!--Botones del navbar --> 
+                <!-- <div class="nav">
+                    <a href="index.html">A Produccion</a>
+                    <a href="historial.html">A Administracion</a>
+                </div> -->
+                <!--Nombre de usuario, aparece el logo de usuario y el nombre-->
+                <div class="usuario">
+                    <img src="img/usuario.jpg" width="40px" class="logo" alt="usuario logeado">
+                    <div class="logeo">
+                        <h3>Jinnar</h3>
+                        <i class="fas fa-caret-square-down"></i>
+                    </div>
+                    
+                </div>
+                
+            </div> 
+        </section>
+    </header>
+    <div class="contenedor">
+  
+    <main class="contenedor inicio-titulo">
+        <h1>Modificar proveedor</h1>
+        <form >
+            <div class="formulario">
+                <fieldset>
+                    <div class="campo fijo">
+                        <label for="name">Razon Social: </label>
+                        <input type="text" id="name" placeholder="Ingrese razon social">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo fijo">
+                        <label for="name">Pais: </label>
+                        <input type="text" id="name" placeholder="Pais">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Provincia: </label>
+                        <input type="text" id="name" placeholder="Provincia">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Localidad: </label>
+                        <input type="text" id="name" placeholder="Localidad">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo fijo">
+                        <label for="name">Direcccion: </label>
+                        <input type="text" id="name" placeholder="Direcccion">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Cuit/Cuil: </label>
+                        <input type="number" id="name" placeholder="Cuit/cuil">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo fijo">
+                        <label for="name">Correo Electronico: </label>
+                        <input type="text" id="name" placeholder="Correo Electronico">
+                        <i class="fas fa-edit"></i>
+                        <label for="name">Telefono: </label>
+                        <input type="number" id="name" placeholder="telefono">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="campo fijo">
+                        <label for="">Condicion impositiva</label>
+                       <select name="" id="">
+                           <option value="">Iva resp. inscripto</option>
+                           <option value="">Monotributista</option>
+                           <option value="">Relacion de dependencia</option>
+                       </select>
+                    </div>      
+                  <div class="boton boton-ubicacion">
+                    <a href="proveedores.html">Guardar</a>
+                  </div>
+                    
+                </fieldset>
+                
+            </div>
+        </form>
+    </main>
+</div>
+    <footer  class="footer clearfix">
+        <h2>2020 Reciplas - Todos los derechos reservados &copy</h2>
+    </footer>
+</body>
+</html>

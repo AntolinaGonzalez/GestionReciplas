@@ -98,8 +98,9 @@ body{
     align-items: center;
 }
 .site-header{
-    background-color: #5f8569;
+    background-color: #ffffff;
     height: 10rem;
+    box-shadow: 1px 5px 2px #888888;
 }
 
 .nav {
