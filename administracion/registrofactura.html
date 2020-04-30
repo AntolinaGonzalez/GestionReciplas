@@ -41,18 +41,18 @@
     </header>
 
     <main class="contenedor inicio-titulo">
-        <h1>Registrar pedido nuevo</h1>
+        <h1>Registro de Factura</h1>
         <form >
             <div class="formulario">
                 <fieldset>
                     <div class="campo fijo">
-                        <label for="id">Nro pedido: </label>
-                        <input type="number" id="id" placeholder="Nro">
+                        <label for="nroF">Nro Factura: </label>
+                        <input type="number" id="nroF" placeholder="Nro Factura">
                         <i class="fas fa-edit"></i>
-                        <label for="Apellido">Fecha de solicitud:</label>
+                        <label for="Fecha de solicitud">Fecha de solicitud:</label>
                         <input type="date" >
-                        <label for="entrega">Lugar de entrega: </label>
-                        <input type="text" id="entrega" placeholder="Direccion">
+                        <label for="precio">Precio total: </label>
+                        <input type="number" id="precio" placeholder="Precio Total">
                         <i class="fas fa-edit"></i>
                     </div>
                    
@@ -63,11 +63,21 @@
                            <option value="">Proveedor 2</option>
                            <option value="">Proveedor 3</option>
                        </select>
-                       <label for="puesto">Puesto: </label>
-                        <input type="text" id="puesto" placeholder="puesto">
-                        <i class="fas fa-edit"></i>
-                       
+                       <label for="">Fecha de registro</label>
+                       <input type="date">
+                       <label for="">Estado</label>
+                       <input type="text" placeholder="Estado">
                     </div>   
+                    <div class="campo fijo">
+                        <label for="">Tipo factura </label>
+                       <select name="area" id="">
+                           <option value="">tipo 1</option>
+                           <option value="">tipo 2</option>
+                           <option value="">tipo 3</option>
+                       </select>
+                       <label for="">Cantidad Total</label>
+                       <input type="text" placeholder="Cantidad Total">
+                    </div>  
                     <div class="boton boton-admi">
                         <a href="#">Limpiar</a>
                     </div>
@@ -76,61 +86,36 @@
                 
             </div>
 
-            <table>
-                <tr>
-                    <th>ID Prod</th>
-                    <th>Nombre producto</th>
-                    <th>Cantidad(kg)</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>Pellets</td>
-                    <td>80</td>
-                    <td>1285</td>
-                </tr>
-                <tr>
-                    <td>031</td>
-                    <td>Plastico</td>
-                    <td>50</td>
-                    <td>2285</td>
-                </tr>
-                
-            </table>
-            <div class="financias">
-                <p>Cantidad total: 130</p>
-                <p>Precio total: 3570</p>
-            </div>
-            <div class="boton boton-admi">
-                <a href="#">Limpiar</a>
-                <a href="#">Agregar</a>
-            </div>
             <div class=" contenedor">
                 <h2>Vista Previa</h2>
                 <div class="">
                     <table class="sup-formulario">
                     <tr>
-                        <th>ID</th>
+                        <th>Nro Factura</th>
                         <th>Proveedor</th>
+                        <th>Tipo factura</th>
                         <th>Fecha de solicitud</th>
-                        <th>Lugar de entrega</th>
-                        <th>acciones</th>
+                        <th>Fecha de registro</th>
+                        <th>Cantidad total:</th>
+                        <th>Precio total</th>
+                        <th>Estado</th>
                     </tr>
              
                 <tr>
                     <td>002</td>
-                    <td>Mengann</td>
-                    <td>14/05/2019</td>
-                    <td>Donovan 223</td>
-                    <td><a href="modificarproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
-                        <i class="fas fa-trash-alt"></i></td>
-                       
+                    <td>Proveedor 1</td>
+                    <td>Tipo A</td>
+                    <td>17/05/18</td>
+                    <td>19/05/18</td>
+                    <td>125</td>
+                    <td>2584</td>
+                    <td>Estado</td>
                     
                 </table>
                 <br>
                 </div>
                 <div class="boton boton-admi">
-                    <a href="#">Guardar</a>
+                    <a href="#">Registrar</a>
                 </div>
             </div>
         </form>

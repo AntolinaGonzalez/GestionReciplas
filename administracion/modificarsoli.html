@@ -42,55 +42,57 @@
 
     <main class="contenedor">
 
-        <div class="inicio-titulo contenedor">
-            <h1>Area de Administracion</h1>
-            <div class="menu-administracion">
-                <div class="opcion-admi">
-
-                    <a href="proveedores.html">
-                        <i class="fas fa-users"></i>
-                        <h2>Proveedores</h2>
-                    </a>
-                </div>
-                <div class="opcion-admi">
-                    <a href="ventas.html">
-                        <i class="fas fa-clipboard-list"></i>
-                        <h2>Ventas</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="usuarios.html">
-                        <i class="fas fa-user-tie"></i>
-                        <h2>Usuarios</h2>
-                    </a>
-
-                </div>
+        <div class="contenedor">
+            <div class=" inicio-titulo">
+               
+                <h1>Modificar solicitud de materia prima</h1>
+                
+               
             </div>
-            <div class="menu-administracion">
-                <div class="opcion-admi">
-                    <a href="compras.html">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h2>Compras</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="opciongestion.html">
-                        <i class="fas fa-clipboard-check"></i>
-                        <h2>Gestion de Stock</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="solicitudes.html">
-                        <i class="fas fa-comment-alt"></i>
-                        <h2>Solicitudes MP</h2>
-                    </a>
-
-                </div>
+            <div>
+               <label for="">Nombre</label>
+               <input type="text" placeholder="COSO 1">
+                <label for="">Fecha emision:</label>
+                <input type="date">
             </div>
-
+            <div>
+                
+            </div>
+            <div>
+                <label for="">Estado</label>
+                <label><input type="checkbox">Completado</label><br>
+                <label><input type="checkbox">Pendiente</label><br>
+                <label><input type="checkbox">Rechazado</label><br>
+                
+            </div>
+            <div class="">
+                <h2>Vista previa</h2>
+                <table class="sup-formulario">
+                    <tr>
+                        <th>Estado</th>
+                        <th>Fecha emision</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Operacion</th>
+                        <th>Acciones</th>
+                    </tr>
+             
+                <tr>
+                    <td></td>
+                    <td>15/05/2020</td>
+                    <td>Nombre 1</td>
+                    <td>20</td>
+                    <td>2.336.7</td>
+                    <td><a href="modificarsoli.html"> <i class="fas fa-pencil-alt"></i></a>
+                        <i class="fas fa-trash-alt"></i></td>
+                   
+                </tr>
+                </table>
+            </div>
+            <div class="boton boton-admi">
+                <a href="#">Realizar Cambios</a>
+                <a href="#">Cancelar</a>
+            </div>
         </div>
     </main>
     <footer class="footer clearfix">

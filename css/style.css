@@ -261,7 +261,7 @@ table{
 }
 
 th, td {
-    width: 15%;
+   width: fit-content;
     height: 5rem;
     text-align: center;
     vertical-align: middle;
@@ -329,10 +329,6 @@ p{
    margin-right: 2rem;
 }
 /**perfil cliente**/
-.inicio-titulo i{
-    margin-right: 2rem;
-    font-size: 4rem;
-}
 .perfil{
     background-color: #b2cbba;
     padding: 2rem;
@@ -528,4 +524,15 @@ width: 100rem;
 .boton-admi a{
     margin-right: 2rem;
 }
+.financias{
+    border: solid .1rem;
+    border-color: black;
+    display: flex;
+    justify-content: end;
+}
+.financias p{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reciplas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-devide-width, initial-scale=1.0">
+    <!--Script para íconos usados-->
+    <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+    <!--Fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Permanent+Marker|Unna&display=swap" rel="stylesheet">
+    <!--Estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<body>
+    <header class="site-header">
+        <section class="contenedor orden">
+            <div class="barra-comercializacion">
+                <div class="logotipo">
+                    <img src="../img/reciplas.png" width="200px" alt="">
+                </div>
+
+                <!--Botones del navbar -->
+                <!-- <div class="nav">
+                    <a href="index.html">A Produccion</a>
+                    <a href="historial.html">A Administracion</a>
+                </div> -->
+                <!--Nombre de usuario, aparece el logo de usuario y el nombre-->
+                <div class="usuario">
+                    <img src="../img/usuario.jpg" width="40px" class="logo" alt="usuario logeado">
+                    <div class="logeo">
+                        <h3>Jinnar</h3>
+                        <i class="fas fa-caret-square-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main class="contenedor">
+
+        <div class="contenedor">
+            <div class=" inicio-titulo">
+               
+                <h1>Gestion de Productos</h1>
+                
+               
+            </div>
+            <form >
+                <div class="formulario">
+                    <fieldset>
+                        <div class="campo fijo">
+                            <label for="id">Tipo: </label>
+                            <select name="" id="">
+                                <option value="">Producto 1</option>
+                                <option value="">Producto 2</option>
+                                <option value="">Producto 3</option>
+                            </select>
+                            <label for="">Nombre: </label>
+                            <input type="text">
+                            <label for="">Importe:</label>
+                            <input type="number">
+                        </select>
+                        </div>
+                        <div class="campo fijo">
+                           <label for="">Desde: </label>
+                           <input type="date">
+                           <label for="">Hasta:</label>
+                           <input type="date">
+                        </div>
+                          
+                        <div class="boton boton-admi">
+                            <a href="#">Buscar</a>
+                            <a href="#">Limpiar</a>
+                        </div>
+                        
+                    </fieldset>
+                    
+                </div>
+            </form>
+            <div class="formulario">
+                <table class="sup-formulario">
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Ingreso</th>
+                        <th>Nombre</th>
+                        <th>Importe</th>
+                        <th>Acciones</th>
+                        
+                    </tr>
+             
+                <tr>
+                    <td><i class="fas fa-file-image"></i></td>
+                    <td>17/03/2020</td>
+                    <td>Producto 1</td>
+                    <td>582.75</td>
+                    <td><a href="modificarproducto.html"> <i class="fas fa-pencil-alt"></i></a>
+                        <i class="fas fa-trash-alt"></i></td>
+                   
+                </tr>
+                <tr>
+                    <td><i class="fas fa-file-image"></i></td>
+                    <td>15/03/2020</td>
+                    <td>Producto 2</td>
+                    <td>112.54</td>
+                    <td><a href="modificarproducto.html"> <i class="fas fa-pencil-alt"></i></a>
+                        <i class="fas fa-trash-alt"></i></td>
+                <tr>
+                    <td><i class="fas fa-file-image"></i></td>
+                    <td>12/06/2019</td>
+                    <td>Producto 3</td>
+                    <td>487,56</td>
+                    <td><a href="modificarproducto.html"> <i class="fas fa-pencil-alt"></i></a>
+                        <i class="fas fa-trash-alt"></i></td>
+                </tr>
+               
+                <tr>
+                    <td></i></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <a href="agregarproducto.html"><i class="fas fa-user-plus"></i></td></a>
+        
+                </tr>
+               
+            </table>
+            </div>
+           
+        </div>
+        <div class="boton boton-admi">
+            <a href="registrofactura.html">Factura</a>
+        </div>
+    </main>
+    <footer class="footer clearfix">
+        <h2>2020 Reciplas - Todos los derechos reservados &copy</h2>
+    </footer>
+</body>
+
+</html>

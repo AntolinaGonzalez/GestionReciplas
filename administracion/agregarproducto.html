@@ -42,55 +42,53 @@
 
     <main class="contenedor">
 
-        <div class="inicio-titulo contenedor">
-            <h1>Area de Administracion</h1>
-            <div class="menu-administracion">
-                <div class="opcion-admi">
-
-                    <a href="proveedores.html">
-                        <i class="fas fa-users"></i>
-                        <h2>Proveedores</h2>
-                    </a>
-                </div>
-                <div class="opcion-admi">
-                    <a href="ventas.html">
-                        <i class="fas fa-clipboard-list"></i>
-                        <h2>Ventas</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="usuarios.html">
-                        <i class="fas fa-user-tie"></i>
-                        <h2>Usuarios</h2>
-                    </a>
-
-                </div>
+        <div class="contenedor">
+            <div class=" inicio-titulo">
+               
+                <h1>Agregar Producto</h1>
+                
+               
             </div>
-            <div class="menu-administracion">
-                <div class="opcion-admi">
-                    <a href="compras.html">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h2>Compras</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="opciongestion.html">
-                        <i class="fas fa-clipboard-check"></i>
-                        <h2>Gestion de Stock</h2>
-                    </a>
-
-                </div>
-                <div class="opcion-admi">
-                    <a href="solicitudes.html">
-                        <i class="fas fa-comment-alt"></i>
-                        <h2>Solicitudes MP</h2>
-                    </a>
-
-                </div>
+            <div>
+                <i class="fas fa-images"></i>
+                <p>Seleccione su archivo</p>
+                <input type="file">
+                <label for="">Fecha ult modificacion:</label>
+                <input type="date">
             </div>
-
+            <div>
+                <label for="">Nombre</label>
+                <input type="text">
+                <label for="">Importe</label>
+                <input type="number">
+            </div>
+            
+            <div class="">
+                <h2>Vista previa</h2>
+                <table class="sup-formulario">
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Ingreso</th>
+                        <th>Nombre</th>
+                        <th>importe</th>
+                        <th>Acciones</th>
+                        
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-file-image"></i></td>
+                        <td>17/03/2020</td>
+                        <td>Producto 1</td>
+                        <td>4557,54</td>
+                        <td><a href="modificarpedido.html"> <i class="fas fa-pencil-alt"></i></a>
+                            <i class="fas fa-trash-alt"></i></td>
+                       
+                    </tr>
+                </table>
+            </div>
+            <div class="boton boton-admi">
+                <a href="#">Guardar</a>
+                <a href="#">Cancelar</a>
+            </div>
         </div>
     </main>
     <footer class="footer clearfix">
