@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <title>Compras</title>
+    <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style2.css">
+
+</head>
+
+<body id="comercializacion">
+    <!--NavBar customizado -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-md-menu"> </i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="compras.html">Compras<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="proveedores.html">Proveedores</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="solicitudes.html">Solicitudes de materia prima</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insumosCompras.html">Stock de insumos</a>
+                    </li>
+                </ul>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="margin-right: 45px;">Usuario
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Perfil</a>
+                        <a class="dropdown-item" href="../../index.html">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="contenedor inicio-titulo">
+        <h1>Registrar Compra</h1>
+        <div>
+            <form>
+                <div class="formulario-cliente">
+                    <fieldset>
+                        <div class="campo">
+                            <div>
+                                <label for="id">ID Compra: </label>
+                                <input type="number" id="id" placeholder="ID">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-edit"></i>
+                                <label for="Apellido">Fecha de solicitud:</label>
+                                <input type="date">
+                            </div>
+
+
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <div>
+                                    <label for="entrega">Lugar de entrega: </label>
+                                    <input type="text" id="entrega" placeholder="Direccion">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">Proveedor </label>
+                                <select name="area" id="">
+                                    <option value="">Proveedor 1</option>
+                                    <option value="">Proveedor 2</option>
+                                    <option value="">Proveedor 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="">Importe</label>
+                                <input type="number">
+                            </div>
+                           
+                        </div>
+                        <div class="campo">
+
+                        </div>
+
+                    </fieldset>
+                    <div class="caption">
+                        <p>Insumos comprados: </p>
+                    </div>
+                   
+                    <div>
+                        <div class="espaciado">
+                            <table class="table" rules="none">
+                                <tr>
+                                    <th>ID Prod</th>
+                                    <th>Nombre producto</th>
+                                    <th>Cantidad(kg)</th>
+                                    <th>Precio</th>
+                                    <th>Acciones</th>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">Productos</option>
+                                            <option value="">Prod 1</option>
+                                            <option value="">Prod 2</option>
+                                            <option value="">Prod 3</option>
+                                            <option value="">Prod 4</option>
+                                        </select>
+                                    </td>
+                                    <td>80</td>
+                                    <td>1285</td>
+                                    <td>
+                                        <a href=""><i class="fas fa-eye"></i></a>
+                                            <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>031</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">Productos</option>
+                                            <option value="">Prod 1</option>
+                                            <option value="">Prod 2</option>
+                                            <option value="">Prod 3</option>
+                                            <option value="">Prod 4</option>
+                                        </select>
+                                    </td>
+                                    <td>50</td>
+                                    <td>2285</td>
+                                    <td>
+                                        <a href=""><i class="fas fa-eye"></i></a>
+                                            <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+        
+                            </table>    
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="botones ubicacion-der" style="text-align: center;">
+                        <button type="button" class="btn btn-outline-success botonCli" id="imprimirCli"><a
+                                class="decoration" href="">Agregar Producto</a></button>
+                    </div>
+
+                </div>
+                <div class="botones ubicacion-centrado" style="text-align: center;">
+                    <button type="button" class="btn btn-outline-success botonCli" id="agregarCli"><a class="decoration"
+                            href="compras.html">Enviar</a></button>
+                    <button type="button" class="btn btn-outline-success botonCli" id="imprimirCli"><a class="decoration"
+                            href="compras.html">Cancelar</a></button>
+                    <button type="button" class="btn btn-outline-success botonCli" id="agregarCli"><a class="decoration"
+                            href="compras.html">Guardar</a></button>
+        
+                </div>
+            </form>
+            
+        </div>
+        
+
+    </main>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../scripts/zoomC.js"></script>
+</body>
+
+</html>

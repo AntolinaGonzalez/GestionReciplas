@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+	<title>Compras</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+    <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+
+    <link rel="stylesheet" type="text/css" href="../../../css/style2.css">
+</head>
+
+<body id="gerente">
+	<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="homeGer.html"><img src="../../../img/logo.png" class="logo-brand" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class = "icon ion-md-menu" > </i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../usuarios.html">Gestión Usuarios<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../opciongestion.html">Gestión Stocks</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px;">Reportes
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="homeRepCompras.html">Compras</a>
+                            <a class="dropdown-item" href="homeRepIngresos.html">Ingresos insumos</a>
+                            <a class="dropdown-item" href="homeRepProduccion.html">Producción</a>
+                            <a class="dropdown-item" href="homeRepVentas.html">Ventas</a>
+                      </div>
+                    </li>
+                
+
+                </ul>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px;">Usuario
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="">Perfil</a>
+                        <a class="dropdown-item" href="../../../index.html">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div id="mesRep">
+            <label>Año: </label>
+            <input type="text" name="periodo" readonly="readonly" value="2020">
+        </div>
+        <div style="position: relative; width: 50%; margin-left: auto; margin-right: 5%; text-align: right; margin-top: 1%; margin-bottom: 1%;">
+            <button type="button" class="btn btn-outline-secondary" style="background-color: rgb(255,255,255,50%);"> <a href="comprasanual.pdf">Imprimir</a> </button>
+            <button type="button" class="btn btn-outline-secondary" style="background-color: rgb(255,255,255,50%);"><a href="">Descargar</a></button>
+            <button type="button" class="btn btn-outline-secondary" style="background-color: rgb(255,255,255,50%);"><a href="">Enviar</a></button>
+        </div> 
+    </div>
+
+    <div style="text-align: center; padding: 1em;">
+        <h3 class="tituloRep">
+            Reporte anual de compras
+        </h3>
+    </div>
+    
+ <div class="espaciado" >
+      <div class="reporte ">
+        <div class="reporte-formato">
+      <table class="table" rules="none">
+        <thead>
+          <tr>
+            <th scope="col">Periodo</th>
+            <th scope="col">Cantidad (kg)</th>
+            <th scope="col">Importe del periodo($)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Enero</td>
+            <td>22</td>
+            <td>21.410</td>
+          </tr>
+
+          <tr>
+            <td>Febrero</td>
+            <td>32</td>
+            <td>26.680</td>
+          </tr>
+
+          <tr>
+
+          <tr>
+            <td>Marzo</td>
+            <td>82</td>
+            <td>59.115</td>
+          </tr>
+
+          <tr>
+            <td>Abril</td>
+            <td>91</td>
+            <td>71.564</td>
+          </tr>
+
+          <tr>
+            <td>Mayo</td>
+            <td>112</td>
+            <td>97.230</td>
+          </tr>
+
+          <tr>
+            <td>Junio</td>
+            <td>91</td>
+            <td>91.452</td>
+          </tr>
+
+          <tr>
+            <td>Julio</td>
+            <td>67</td>
+            <td>61.250</td>
+          </tr>
+
+          <tr>
+            <td>Agosto</td>
+            <td>83</td>
+            <td>120.341</td>
+          </tr>
+
+          <tr>
+            <td>Septiembre</td>
+            <td>80</td>
+            <td>134.314</td>
+          </tr>
+
+          <tr>
+            <td>Octubre</td>
+            <td>141</td>
+            <td>90.412</td>
+          </tr>
+
+          <tr>
+            <td>Noviembre</td>
+            <td>164</td>
+            <td>154.415</td>
+          </tr>
+
+          <tr>
+            <td>Diciembre</td>
+            <td>142</td>
+            <td>121.456</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="info-reportes">
+        <h4>Cantidad total: <span>1107 kg</span></h4>
+        <h4>Importe abonado: <span>$1.049.639</span></h4>
+        <h4>Mes de mayor compra: <span>Noviembre</span></h4>
+        <h4>Mes de menor compra <span>Enero</span></h4>
+    </div>
+    </div>
+   </div>
+    <div class="hojaRep" id="imgIngresos" >
+      <img src="../../../img/anualCompras.jpg" >
+      <img src="../../../img/anualCompras2.jpg">
+    </div>
+</div>
+
+
+
+     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../../scripts/zoomG.js"></script>
+</body>
+</html>

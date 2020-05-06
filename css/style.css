@@ -1,538 +1,163 @@
-:root{
-    --tabla: 'Unna', serif;
-    --titulo: 'Permanent Marker', cursive;
-    --fuenteprincipal: 'Bebas Neue', cursive;
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;
-    line-height: 1.5rem;
-}
- *,*::before, *::after{
-        box-sizing: inherit;
- }
-.contenedor{
-    margin: 0 auto;
-    max-width: 120rem;
-}
-/**para controlar el footer**/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.navbar{
+    background-color: #fff; 
+    box-shadow: 0 2px 4px 0 rgb(0,0,05);
+    min-height: 100px;
 }
 
-.clearfix:after {
-  clear: both;
+.nav-link{
+    color:black;
 }
 
-/**LOGIN **/
-.login{
-    background-image: none;
-    background-image: url(../img/fondocuadriculado.png);
+.nav-link:hover{
+    color:black;
 }
-.seccion-login{
-    background-image: none;
+
+.logo-brand{
+    min-width: 20px; 
+    max-width: 60px; 
+    min-height: 20px
+    max-height:60px;
 }
-.imagen-inicio{
-    width: 50%;
-  float: left;
-  padding: 4rem;
-  display: table-column;
-  text-align: center;
-  background-color: white;
+
+.zoom {
+    width: 200px;
+    height: 130px; 
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    opacity: 40%;
+    border-radius: 30px; 
+}
  
-}
-.imagen-inicio img{
-  width: 100%;
-  margin: 20rem 0rem;
-  text-align: center;
-}
-.inicio-logeo{
-    width: 40%;
-    float: right; 
-    padding: 3rem;
-    display: table-column;
-    background-color: whitesmoke;
-    border: solid;
-    margin: 20rem 0rem;
-  
-}
-.inicio-logeo p{
-    font-style: italic;
-    text-align: end;
-    color: #14401a;
-}
-.campo-login {
-    display: flex;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-.campo-login label{
-    flex: 0 0 calc(50% - 1rem);
-    color: var(--blanco);
-}
-.campo-login input[type="text"],
-.campo-login input[type="password"] {
-    flex: 1;
-    height: 2.5rem;
-    max-width: 70%;
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 60%; 
+    border-radius: 30px; 
 }
 
-/**fin estilos de la pagina login **/
-
-/**barra**/
-.logotipo{
-     display: flex;
-    justify-content: start;
-    align-items: center;
-}
-.logo{
-    max-width: 35%;
-    align-items: center;
-}
-.site-header{
-    background-color: #ffffff;
-    height: 10rem;
-    box-shadow: 1px 5px 2px #888888;
+.divCollapse{
+    background-color: rgb(255,255,255,75%); 
+    margin: 10px;
+    border-radius: 20px; 
 }
 
-.nav {
-    text-decoration: none;
-    display: flex;
-    justify-content: end;
-     align-items: center;
-}
-.nav a{
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-    padding: 1rem;
-    font-family: var(--tabla);
-}
-.nav a:hover{
-    background-color: green;
-}
-.usuario{
-    background-color: #62a574;
-    text-align: center;
-}
-.usuario h3{
-    font-size: 1.5rem;
-    color:white;
-    margin-right: 2rem;
-}
-.usuario i{
-    font-size: 2rem;
-}
-.usuario i:hover{
-    cursor: pointer;
-    background-color:darkolivegreen;
-    padding: .1rem;
-}
-.usuario img{
-    margin-top: 1rem;
-    border: solid;
-}
-.logeo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/**comercializacion**/
-.barra-comercializacion{
-   display: grid;
-   grid-template-columns: 2fr .3fr;
-}
-.inicio-titulo h1{
-    text-align: center;
-    margin-top: 2rem;
-    text-transform: uppercase;
-    font-family: var(--tabla);
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-.menu-comercializacion{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-right: 40rem;
-    margin-left: 40rem;
-
-}
-.opcion-comer{
-   padding: 2rem;
-    border: solid;
-    margin-bottom: 2rem;
-    background-color: #097a28;
-    transition: ease-in-out;
-}
-.opcion-comer a{
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-.opcion-comer:hover{
-    background-color:#48d96f;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.opcion-comer i{
-    font-size: 4rem;
-    margin-right: 2rem;
-}
-/** lista clientes comercializacion**/
-.navbar-c{
-    margin: 2rem;
-    padding: 1rem;
-    background-color:#c6d3cb;
-    width: 20%;
-}
-.navbar-f{
-    margin: 2rem;
-    padding: 1rem;
-}
-.navbar-f a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-    border:solid .1rem;
-    padding: 1.3rem;
-    background-color: #c6d3cb;
-}
-.navbar-f a:hover{
-    background-color:#828784; 
-}
-.navbar-c a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-    border:solid .1rem;
-    padding: .5rem;
-}
-.navbar-c a:hover{
-    background-color:#828784;
+.filtro1{
+    margin-left: 20px;
 }
 
-.imprimir{
-    display: flex;
-    justify-content: end;
-    text-align: center;
-}
-.buscador{
-    margin: 2rem;
-    font-size: 1.1rem;
-}
-/**formulario nuevo cliente**/
-.formulario-cliente{
-    background-color: #bac7be;
-    width: 70%;
-    margin-left: 20rem;
-    margin-bottom: 2rem;
+.filtro2{
+    margin-left: 35px; 
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #5f8569;
-    padding: 1rem;
+.table{
+    background-color: rgb(255,255,255,75%); 
+    margin-top: 10px; 
+    max-width: 97%; 
+    border-radius: 20px;
+}
+
+.tablaCentrada{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 60%;
+}
+
+.tablaCentrada2{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+#asignarB{
+    background-color: transparent;
+}
+
+
+/*Estilos para el input de la cantidad en la vista de asignar*/
+#inputCant{
+    margin-top: 10px; 
+    padding: 10px; 
+}
+
+.collapse{
+    border-radius: 20px; 
+}
+
+
+/*Id para el cuadro de texto de descripción en la vista de asignar */
+#descAsig{
+    width: 400px; 
     height: 100px;
+    margin-top: 10px; 
+    padding: 10px;
 }
-.contenedor-tabla{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-}
-.contenedor-tabla-historial{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    margin-right: 2rem;
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-    color:#0e1a0d;
+/* Esta clase la use para los select de los form, para poner el límite 
+de anchura*/
+.selecForm{
+    width: 300px; 
 }
 
-th, td {
-   width: fit-content;
-    height: 5rem;
-    text-align: center;
-    vertical-align: middle;
-    border: .1rem solid black;
-    border-collapse: collapse;
-    padding: 1rem;
-    font-size: 2rem;
-    background-color: #e4f0e7;
-    font-family: var(--tabla);
-}
-th, .fila{
-    background-color:#d2d6d3;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: medium;
-    width: 20px;
-}
-tr:hover{
-    cursor: pointer;
-    color: black;
-    transform: scale(1);
-    border: solid;
-    background-color: indigo!important;
-}
-/**editar cliente - datos fijos*/
-caption{
-    text-align: start;
-}
-p{
-    font-size: 1.5rem;
-}
-.arriba{
-    display: flex;
-    padding: 2rem;
-}
-.arriba h1{
-    margin-right: 2rem;
-    margin-left: 20rem;
-    font-family: var(--tabla);
-    font-size: 2.5rem;
-    background-color:white;
-    padding: .3rem;
-}
-.boton a{
-    text-decoration: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    background-color:  #b2cbba;
-    border-radius: .2rem; 
-    color: #0e1a0d;
-    font-size: 1.5rem;
-    font-family: var(--tabla);
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-.boton a:hover{
-    background-color: #828784;
-}
-.abajo{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-.abajo h1{
-   margin-right: 2rem;
-}
-/**perfil cliente**/
-.perfil{
-    background-color: #b2cbba;
-    padding: 2rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
+.divCentrar{
+    text-align: center; 
+    margin-top: 10px; 
 }
 
-.perfil p span{
-    background-color:#bac7be;
-    padding: .5rem 4rem;
-    border: solid .1rem;
-    font-weight: 300;
-}
-.datos-perfil{
-    display: flex;
-    justify-content: center;
-}
-.datos-perfil p{
-    margin-right: 2rem;
-}
-/**pedidos*/
-.boton-pedido a{
-    border: solid .1rem;
-    margin-left: 2rem;
-    background-color: gray;
-    color: black;
-}
-.boton-pedido a:hover{
-    background-color: cadetblue;
-}
-.parte-pedido{
-    background-color:#1b8443;
-    padding: 2rem;
-}
-.campo-pedido{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1.7rem;
-}
-.campo-pedido label{
-    font-size: 1.6rem;
-}
-.campo-pedido input[type="date"]{
-    font-size: 1.6rem;
-}
-.tamano4 td{
-    width: 25%;
-}
-.margin{
-    margin-top: 2rem;
-}
-/**paginas internas**/
-.contenedor-formulario{
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 3rem;
-  width: 100%;
-}
-.campo {
-    display: flex;
-    margin-bottom: 2.5rem;
-    align-items: center;
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-.campo i{
-    font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.campo label {
-    color: black;
-    font-size: 1.6rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+.datos{
+    padding: 5px; 
+    background-color: rgb(255,255,255,70%);
+    border-radius: 10px; 
 }
 
-.campo input[type="text"],
-.campo input[type="tel"],
-.campo input[type="number"],
-.campo textarea {
-    flex: 1;
-    height: 2.5rem;
-    background-color:whitesmoke;
-    max-width: 70%;
-    font-size: 1.6rem;
-}
-.campo input[type="date"]{
-    background-color: lightgray;
-}
-.fijo input::placeholder{
-    color: black;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-emphasis-color: black;
-    opacity: 1;
-}
-.boton-ubicacion{
-    display: flex;
-    justify-content: space-around;
-}
-.boton-enviar{
-    background-color: #14401a;
-    color: white;
-    padding: 1rem 2rem;
-    border-color: #0e1a0d;
-    font-family: var(--tabla);
-    font-size: 1.5rem;
-}
-.boton-enviar:hover{
-    cursor: pointer;
-    background-color:darkolivegreen;
-}
-.contenedor-solicitudes{
-width: 100rem;
-  margin: 0 auto;
-  padding: 3rem;
-  width: 100%;
-}
-.boton-asignar {
-    background-color:transparent;
-    border: 0;
-    margin: 0;
-    text-align: left;
-}
-.click:hover{
-    background-color: red!important;
+.margenI{
+    margin-left: 50px;
 }
 
-/**administracion**/
-/**pagina index**/
 
-.menu-administracion{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-}
-.opcion-admi{
-    padding: 2rem;
-    background-color: #48d96f;
-    height: 20rem;
-    width: 20rem;
-    text-align: center;
-    border: #0e1a0d;
-    border: solid;
-}
-.opcion-admi i{
-    color: black;
-    margin-top: 3rem;
-}
-.opcion-admi a{
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-
-.opcion-admi:hover{
-    background-color:#828784;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.opcion-admi i{
-    font-size: 4rem;
-    margin-right: 2rem;
-}
-.proveedores{
-    display: flex;
-    margin: 2rem;
-    justify-content: space-between;
-}
-.proveedores h1{
-    margin-left: -15rem;
-}
-.boton-busq{
-    margin-top: 1rem;
-}
-.boton-busq a{
-    text-decoration: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    background-color:  #b2cbba;
-    border-radius: .2rem; 
-    color: #0e1a0d;
-    font-size: 1.5rem;
-    font-family: var(--tabla);
-}
-.formulario{
-    margin-bottom: 8rem;
-}
-.boton-admi{
-    display: flex;
-    justify-content: end;
-}
-.boton-admi a{
-    margin-right: 2rem;
-}
-.financias{
-    border: solid .1rem;
+fieldset{
     border-color: black;
-    display: flex;
-    justify-content: end;
-}
-.financias p{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    background-color: rgb(255,255,255,50%);
+    border-width: medium;
+    border-style: solid;
+    width: 70%;
 }
 
+.campo{
+    padding: 10px;
+}
 
+.centrarForm{
+    margin: auto;
+}
+
+#enviarSolicitud{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+/**para que se distingan mejor las lineas */
+th, td{
+    border: solid .1rem;
+}
+
+.divBuscar{
+    background-color: rgb(255,255,255,70%); 
+    text-align: center; 
+    border-radius: 20px; 
+    margin-top: 1%;
+    padding: 1em;
+    border-bottom-style: solid; 
+    border-bottom-color: black;
+}

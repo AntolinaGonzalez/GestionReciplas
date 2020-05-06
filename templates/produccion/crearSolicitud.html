@@ -1,0 +1,107 @@
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Crear Solicitud</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+      <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+      <link rel="stylesheet" href="../../css/style.css">
+
+
+    </head>
+
+    <body>
+
+      <!--NavBar customizado --> 
+      <!--Las sombras y demás van en la plantilla de css -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class = "icon ion-md-menu" > </i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="pedidos_cli.html">Pedidos<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="solicitudesMP.html">Solicitudes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="stock.html">Stock</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px; margin-left: 10px;">Usuario
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Perfil</a>
+            <a class="dropdown-item" href="../../index.html">Cerrar sesión</a>
+            </div>
+      </div>
+      </div>
+      </nav>
+
+      <form style="align-self: center">
+        <div>
+            <fieldset style="margin: auto;">
+                <legend>Solicitud de Insumo</legend>
+
+                <div class="campo">
+                  <label for="Producto">Insumo: </label>
+                  <input type="text" id="Producto" placeholder="Insumo">
+                  <i class="fas fa-edit"></i>
+                  <label for="cantidad" style="margin-left: 20px;">Cantidad: </label>
+                  <input type="number" id="cantidad" placeholder="Cantidad">
+                  <i class="fas fa-edit"></i>
+                </div>
+
+                <div class="campo">
+                  <label>Fecha: </label>
+                  <input type="date" name="Fecha">
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+
+                <div class="campo">
+                  <label for="descripcion">Descripcion:</label>
+                  <i class="fas fa-edit"></i>
+                </div>  
+                <div style=" text-align: center;">
+                  <textarea placeholder="Descripción" style="width: 600px; height: 100px; margin: auto;"></textarea>  
+                </div>
+                <div style="text-align: center;">
+                  <button type="button" class="btn btn-outline-success" id="enviarSolicitud">Enviar</button>
+                </div>
+                
+              
+            </fieldset>
+        </div>
+        
+      </form>
+   
+
+
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+      <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="../../scripts/zoom.js"></script>
+   </body>
+  </html>

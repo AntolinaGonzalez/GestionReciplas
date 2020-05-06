@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Detalle producto</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/style2.css">
+
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon ion-md-menu"> </i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="pedidos_cli.html">Pedidos<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="solicitudesMP.html">Solicitudes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="stock.html">Stock</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="margin-right: 45px; margin-left: 10px;">Usuario
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">Perfil</a>
+          <a class="dropdown-item" href="../../index.html">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--<table class="table" rules="none" id="pedidoA"></table>
+
+      <table class="table" rules="none">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Calidad</th>
+            <th scope="col">Estado</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Un producto</td>
+            <td>Buena</td>
+            <td>Pendiente</td>
+            <td>
+              <button type="button" class="btn btn-outline-success asignar" >Asignar</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Otro producto</td>
+            <td>Una calidad</td>
+            <td>Terminado</td>
+            <td>
+              <button type="button" class="btn btn-outline-success asignar" >Asignar</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Otro producto</td>
+            <td>Otra calidad</td>
+            <td>Terminado</td>
+            <td>
+              <button type="button" class="btn btn-outline-success asignar">Asignar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table> -->
+      <div class="inicio-titulo">
+<h1>Detalle pedido</h1>
+<div class="divCentrar">
+  <a>Fecha: <span class="datos">22/04/2020</span></a>
+  <a class="margenI">N° Pedido: <span class="datos">123</span></a>
+  <a class="margenI">Cliente: <span class="datos">Res S.A</span></a>
+  <a class="margenI">Estado: <span class="datos">Pendiente</span></a>
+</div>
+<br>
+<div class="tablaCentrada divBuscar" style="padding: 2em; width: 50%;">
+  <div>
+    <label>Producto: </label>
+    <input type="text" name="" placeholder="Producto">
+    <button class="btn btn-success" style="margin-left: 3%">Buscar</button>
+  </div>
+
+      </div>
+  <br>
+ 
+
+  </div>
+
+  <div class="divCentrar">
+    <table class="table tablaCentrada" rules="none" style="width: 70%;">
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad(kg)</th>
+        <th>Descripcion</th>
+        <th>Acciones</th>
+
+      </tr>
+
+      <tr>
+        <td class="fila">Silleta Reposera</td>
+        <td>1000</td>
+        <td>Color negro</td>
+        <td><button type="button" class="btn btn-outline-success asignar">Asignar</button></td>
+
+
+      </tr>
+      <tr>
+        <td class="fila">Mesa Redonda</td>
+        <td>1000</td>
+        <td>Color negro</td>
+        <td><button type="button" class="btn btn-outline-success asignar">Asignar</button></td>
+      </tr>
+      <tr>
+        <td class="fila">Mesa Cuadrada</td>
+        <td>1000</td>
+        <td>Color blanco</td>
+        <td><button type="button" class="btn btn-outline-success asignar">Asignar</button></td>
+      </tr>
+    </table>
+    <br>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="../../scripts/zoom.js"></script>
+</body>
+
+</html>

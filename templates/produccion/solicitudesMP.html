@@ -1,0 +1,170 @@
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Solicitudes</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+      <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/style2.css">
+
+
+    </head>
+
+    <body>
+
+      <!--NavBar customizado --> 
+      <!--Las sombras y demás van en la plantilla de css -->
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+          <a class="navbar-brand" href=""><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class = "icon ion-md-menu" > </i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="pedidos_cli.html">Pedidos<span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Solicitudes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="stock.html">Stock</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px; margin-left: 10px;">Usuario
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="">Perfil</a>
+                <a class="dropdown-item" href="../../index.html">Cerrar sesión</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+<main class="inicio-titulo">
+<h1>Solicitudes de materia prima</h1>
+<div class="tablaCentrada divBuscar" style="width: 60%;">
+  <div>
+    <label>ID: </label>
+    <input type="number" name="" placeholder="ID">
+
+    <label style="margin-left: 2%;">Insumo: </label>
+    <input type="text" name="" placeholder="Nombre">
+  </div>
+
+  <div>
+    <label>Color: </label>
+    <select>
+      <option disabled selected>Color</option>
+      <option>Rojo</option>
+      <option>Negro</option>
+      <option>Blanco</option>
+    </select>
+
+    <label>Estado: </label>
+    <select>
+      <option disabled selected>Estado</option>
+      <option>Pendiente</option>
+      <option>Terminado</option>
+    </select>
+    <button class="btn btn-success" style="margin-left: 3%">Buscar</button>
+  </div>
+
+</div>
+
+<div class="divCentrar">
+  <table class="table tablaCentrada" rules="none" style="width: 70%;">
+  
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Insumo</th>
+      <th scope="col">Calidad</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Color</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Acciones</th>
+    </tr>
+ 
+    <tr>
+      <th scope="row">1</th>
+      <td>Un insumo</td>
+      <td>Buena</td>
+      <td>123</td>
+      <td>Verde</td>
+      <td>Pendiente</td>
+      <td>20/04/2020</td>
+      <td>
+        <a href="">
+            <i class="fas fa-eye"></i>
+        </a>
+        <i class="fas fa-trash-alt"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Otro insumo</td>
+      <td>Una calidad</td>
+      <td>123</td>
+      <td>Verde</td>
+      <td>Terminado</td>
+      <td>17/03/2020</td>
+      <td>
+        <a href="">
+            <i class="fas fa-eye"></i>
+        </a>
+        <i class="fas fa-trash-alt"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Otro insumo</td>
+      <td>Otra calidad</td>
+      <td>123</td>
+      <td>Verde</td>
+      <td>Terminado</td>
+      <td>20/01/2020</td>
+      <td>
+        <a href="">
+            <i class="fas fa-eye"></i>
+        </a>
+        <i class="fas fa-trash-alt"></i>
+      </td>
+    </tr>
+ 
+</table>
+<br>
+<div style="width: 60%;">
+  <button type="button" class="btn btn-secondary" id="crearSolicitud">Crear Solicitud</button>
+</div>
+</div>
+</main>
+      
+      
+
+
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+      <script src="../../scripts/zoom.js"></script>
+   </body>
+  </html>

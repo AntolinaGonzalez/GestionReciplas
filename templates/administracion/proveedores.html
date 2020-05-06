@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <title>Proveedores</title>
+    <script src="https://kit.fontawesome.com/cf5dc9ec56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+    <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+
+    <link rel="stylesheet" type="text/css" href="../../css/style2.css">
+
+</head>
+
+<body id="comercializacion">
+    <!--NavBar customizado --> 
+      <!--Las sombras y demás van en la plantilla de css 
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class = "icon ion-md-menu" ></i>
+        </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Clientes<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidos.html">Pedidos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ventas.html">Ventas</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px;">Usuario
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Perfil</a>
+            <a class="dropdown-item" href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>-->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../../img/logo.png" class="logo-brand" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class = "icon ion-md-menu" > </i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuarios.html">Gestión Usuarios<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="opciongestion.html">Gestión Stocks</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px;">Reportes
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="reportes/homeRepCompras.html">Compras</a>
+                            <a class="dropdown-item" href="reportes/homeRepIngresos.html">Ingresos insumos</a>
+                            <a class="dropdown-item" href="reportes/homeRepProduccion.html">Producción</a>
+                            <a class="dropdown-item" href="reportes/homeRepVentas.html">Ventas</a>
+                      </div>
+                    </li>
+                </ul>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 45px;">Usuario
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Perfil</a>
+                        <a class="dropdown-item" href="../../index.html">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main class="contenedor inicio-titulo">
+    <h1>Proveedores</h1>
+    <div class="back">
+        <div class="busqueda">
+            <div>
+                <label for="">ID:</label>
+                <input type="text" placeholder="ID">
+            </div>
+            <div>
+                <label for="">Razon social: </label>
+                <input type="text" placeholder="Razon Social">
+                
+            </div>
+            <div>
+                <label for="">Telefono: </label>
+                <input type="text" placeholder="telefono">
+            </div>
+           
+        </div>
+        <div class="busqueda">
+            <div>
+                <label for="">Localidad: </label>
+                <input type="text" placeholder="Localidad">
+            </div>
+            <div>
+                <label for="">Cuit/Cuil: </label>
+                <input type="text" placeholder="Cuit/cuil">
+            </div>
+            <div>
+                <label for="">E-mail: </label>
+                <input type="text" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="busqueda">
+            <div>
+                <label for="">Direccion</label>
+                <input type="text" placeholder="Direccion">
+            </div>
+            <div>
+                <label for="">Fecha de compra: </label>
+                <input type="date">
+            </div>
+           
+        </div>
+        <div class="botones ubicacion-centro linea" style="text-align: center;">
+            <button type="button" class="btn btn-outline-success botonCli" id="imprimirCli" ><a class="decoration space" href="">Buscar</a></button>
+           
+        </div>
+    </div>
+   <br>
+    <div class="tablaCentrada" style="text-align: center;">
+        <table class="table" rules="none">
+                <tr>
+                    <th>ID</th>
+                    <th>Razon social</th>
+                    <th>Telefono</th>
+                    <th>Direccion</th>
+                    <th>Localidad</th>
+                    <th>Cuit/cuil</th>
+                    <th>E-mail</th>
+                    <th>Ult. Fecha de compra</th>
+                    <th>Acciones</th>
+                </tr>
+         
+            <tr>
+                <td>001</td>
+                <td>Giacomo Guillizoni</td>
+                <td>3624055623</td>
+                <td>Peldi 541</td>
+                <td>Chaco</td>
+                <td>27-15662589-7</td>
+                <td>giacog@gmail.com</td>
+                <td>17/02/2020</td>
+                <td><a href="verproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
+                    <i class="fas fa-trash-alt"></i></td>
+               
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Giacomo Guillizoni</td>
+                <td>3624055623</td>
+                <td>Peldi 541</td>
+                <td>Corrientes</td>
+                <td>27-15662589-7</td>
+                <td>giacog@gmail.com</td>
+                <td>17/02/2020</td>
+                <td><a href="verproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
+                    <i class="fas fa-trash-alt"></i></td>
+            <tr>
+                <td>041</td>
+                <td>Giacomo Guillizoni</td>
+                <td>3624055623</td>
+                <td>Peldi 541</td>
+                <td>Chaco</td>
+                <td>27-15662589-7</td>
+                <td>giacog@gmail.com</td>
+                <td>17/02/2020</td>
+                <td><a href="verproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
+                    <i class="fas fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+                <td>011</td>
+                <td>Giacomo Guillizoni</td>
+                <td>3624055623</td>
+                <td>Peldi 541</td>
+                <td>Formosa</td>
+                <td>27-15662589-7</td>
+                <td>giacog@gmail.com</td>
+                <td>17/02/2020</td>
+                <td><a href="verproveedor.html"> <i class="fas fa-pencil-alt"></i></a>
+                    <i class="fas fa-trash-alt"></i></td>
+            </tr>
+        </table>
+        <div class="botones ubicacion-der" style="text-align: center;">
+            <button type="button" class="btn btn-outline-success botonCli" id="agregarCli"><a class="decoration" href="agregarprovedor.html">Agregar proveedor</a></button>
+        </div>
+    </div>
+
+   
+    
+</main>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../scripts/zoomC.js"></script>
+</body>
+</html>
